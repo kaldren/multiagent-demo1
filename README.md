@@ -2,6 +2,12 @@
 
 This is a demo project showcasing how to use **Azure AI Foundry Agent Service** to automate an employee onboarding flow using multiple AI agents.
 
+## 📺 Demo Video
+
+There’s a quick demo showing the app and how everything works together:  
+**[Watch it on YouTube](https://www.youtube.com/watch?v=0YLFdzMoMCo)**
+
+
 ## 🧠 What It Does
 
 The app collects an employee's **full name**, **email**, and **department** from a simple frontend form. Behind the scenes, it dynamically creates and coordinates three agents:
