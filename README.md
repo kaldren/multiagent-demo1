@@ -2,11 +2,10 @@
 
 This is a demo project showcasing how to use **Azure AI Foundry Agent Service** to automate an employee onboarding flow using multiple AI agents.
 
-## 📺 Demo Video
+## 📺 Demo YouTube Video
 
 There’s a quick demo showing the app and how everything works together:  
 **[Watch it on YouTube](https://www.youtube.com/watch?v=0YLFdzMoMCo)**
-
 
 ## 🧠 What It Does
 
@@ -54,6 +53,7 @@ To run this app, you’ll need the following Azure resources:
 The file `software_engineering_dept.txt` located in the `/data` folder contains onboarding content for the Software Engineering department. This file is used to populate the Azure AI Search index and powers the department RAG query.
 
 Make sure to:
+
 - Embed the content using the `text-embedding-3-small` model
 - Upload the embedded data into the index defined in your `.env` file
 
@@ -72,3 +72,4 @@ MODEL_DEPLOYMENT_NAME=<your-model-deployment-name>
 AZURE_SEARCH_ENDPOINT=https://<your-search-endpoint>
 AZURE_SEARCH_API_KEY=<your-api-key>
 AZURE_SEARCH_INDEX_NAME=<your-index-name>
+```
