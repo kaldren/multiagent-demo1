@@ -18,7 +18,7 @@ The app collects an employee's **full name**, **email**, and **department** from
 
 To run this app, you’ll need the following Azure resources:
 
-- **Azure AI Foundry Agent Service**  
+- **Azure AI Foundry Project**  
   Used to create and coordinate the agents. You’ll use a deployed LLM (e.g., `gpt-4o-mini`) for agent reasoning and message generation.
 
 - **Azure OpenAI**  
