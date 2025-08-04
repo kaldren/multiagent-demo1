@@ -1,0 +1,120 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Demo Function App API",
+    "description": "Azure Function App for Discord webhook messaging",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://demofuncapp1-hagpd6aqfjehhhd6.canadacentral-01.azurewebsites.net/api",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/discord": {
+      "post": {
+        "summary": "Send message to Discord",
+        "description": "Sends a message to a Discord channel using a webhook. No authentication required.",
+        "operationId": "messageDiscord",
+        "security": [],
+        "parameters": [
+          {
+            "name": "message",
+            "in": "query",
+            "required": true,
+            "description": "The message content to send to Discord",
+            "schema": {
+              "type": "string",
+              "example": "xyz"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success or error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                },
+                "examples": {
+                  "success": {
+                    "value": {
+                      "status": "success",
+                      "message": "Message sent successfully to Discord"
+                    }
+                  },
+                  "error": {
+                    "value": {
+                      "status": "error",
+                      "message": "Failed to send message to Discord"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DiscordMessageRequest": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "The message content to send to Discord",
+            "example": "Hello, World!"
+          }
+        }
+      },
+      "ApiResponse": {
+        "type": "object",
+        "required": ["status", "message"],
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["success", "error"],
+            "description": "Status of the operation"
+          },
+          "message": {
+            "type": "string",
+            "description": "Descriptive message about the result"
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error message"
+          }
+        }
+      }
+    }
+  }
+}

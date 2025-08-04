@@ -1,0 +1,7 @@
+fastapi[standard]
+azure-ai-projects
+azure-ai-agents
+azure-identity
+dotenv
+aiohttp
+jsonref

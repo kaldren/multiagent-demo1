@@ -1,0 +1,97 @@
+# Welcome to the Software Development Department
+
+## 👋 Introduction
+Welcome to the Software Development team at FictiTech Inc.! We’re excited to have you on board. This document contains essential information to help you get started and succeed in your role.
+
+---
+
+## 🏢 Department Overview
+The Software Development department is responsible for building and maintaining all internal and customer-facing applications. We follow agile methodologies and encourage innovation, collaboration, and ownership.
+
+**Key Domains:**
+- Backend Services (.NET, Python)
+- Frontend Applications (React, Angular)
+- DevOps & CI/CD (GitHub Actions, Azure DevOps)
+- AI/ML Integrations (Azure AI, OpenAI APIs)
+
+---
+
+## 👥 Key Contacts
+| Name             | Role                     | Contact             |
+|------------------|--------------------------|----------------------|
+| Maria Velasquez  | Head of Software Dev     | maria.velasquez@fictitech.com |
+| James Carter     | DevOps Lead              | james.carter@fictitech.com     |
+| Laura Chen       | QA Manager               | laura.chen@fictitech.com       |
+
+---
+
+## 📚 Essential Resources
+- **Confluence Wiki**: [https://confluence.fictitech.com/software-dev](https://confluence.fictitech.com/software-dev)
+- **Source Code Repos**: [https://github.com/fictitech](https://github.com/fictitech)
+- **Architecture Docs**: `/docs/architecture/overview.md`
+- **Dev Environments**: Set up instructions at `/docs/env-setup.md`
+
+---
+
+## 🔧 Development Tools & Accounts
+| Tool             | Purpose                | URL/Instructions                          |
+|------------------|------------------------|--------------------------------------------|
+| Visual Studio    | Main IDE for backend   | Installed via company portal               |
+| Azure DevOps     | CI/CD & Repo Mgmt      | [dev.azure.com/fictitech](https://dev.azure.com/fictitech) |
+| Postman          | API Testing            | Pre-installed with company package         |
+| Docker Desktop   | Local container testing| [docker.com](https://www.docker.com)       |
+
+---
+
+## 🔁 Development Workflow
+
+1. **Create feature branch** from `develop`
+2. **Implement and commit** with clear messages
+3. **Open PR** and request review from 2 peers
+4. **Run tests** before merging
+5. **Deploy to QA** using Azure Pipeline
+
+---
+
+## 📦 Sample Projects to Explore
+
+- `EmployeeDirectory.API`: .NET 8 API using MediatR and DDD
+- `ProjectPlanner.Web`: React + Tailwind frontend
+- `TranslationService`: Azure Function-based microservice for file translation
+
+---
+
+## 🚨 Best Practices
+
+- Use **feature toggles** for all new features
+- Always write **unit tests**
+- Document all **public APIs**
+- Avoid **hardcoded secrets**, use **Azure Key Vault**
+
+---
+
+## ❓FAQs
+
+**Q:** Where can I find design patterns we follow?  
+**A:** See `/docs/architecture/design-patterns.md`
+
+**Q:** How do I get access to production data?  
+**A:** Fill out the `Prod Access Request` in ServiceNow and get manager approval.
+
+**Q:** What’s the Slack channel for developers?  
+**A:** `#dev-general` and `#dev-support`
+
+---
+
+## ✅ Your First Week Checklist
+
+- [ ] Setup your dev environment
+- [ ] Clone the main repos
+- [ ] Meet with your onboarding buddy
+- [ ] Review architecture and coding standards
+- [ ] Complete first simple task or bug fix
+
+---
+
+Welcome again, and happy coding! 🚀  
+— Software Development Leadership
